@@ -60,7 +60,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP EQUAL
+  - '='
   - '-'
   - {t: ▽, type: trans}
   - '4'
@@ -120,9 +120,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-control$$
-  - RIGHT ALT
   - DELETE
+  - RIGHT ALT
+  - RIGHT CONTROL
   - $$mdi:apple-keyboard-command$$
   - {t: ▽, type: trans}
   - ␣
