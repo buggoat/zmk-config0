@@ -11,6 +11,9 @@ manifest:
     # nice!view gem
     - name: buggoat
       url-base: https://github.com/buggoat
+    # Mario peripheral animation
+    - name: buggoat
+      url-base: https://github.com/buggoat
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -34,6 +37,10 @@ manifest:
       revision: main
     # nice!view gem
     - name: nice-view-gem
+      remote: buggoat
+      revision: main
+    # nice!view Mario
+    - name: mario-peripheral-animation
       remote: buggoat
       revision: main
   self:
