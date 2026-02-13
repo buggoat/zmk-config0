@@ -35,6 +35,6 @@ manifest:
     # nice!view gem
     - name: nice-view-gem
       remote: buggoat
-      revision: main
+      revision: v0.3.0
   self:
     path: config
