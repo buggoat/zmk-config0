@@ -26,6 +26,20 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_SHIFT>, <&kp END>;
         };
+
+        td2: td2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD2";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&kp LEFT_ALT>;
+        };
+
+        td3: td3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD3";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN>, <&tog 1>;
+        };
     };
 
     keymap {
@@ -41,10 +55,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 1 ESCAPE  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &kp BSPC
-&lt 2 TAB     &kp A  &kp S  &kp D         &kp F  &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LCTRL     &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                            &kp LEFT_ALT  &td0   &kp SPACE    &kp RET  &td1   &kp RIGHT_GUI
+&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB     &kp A  &kp S  &kp D  &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                          &td2   &td0   &kp SPACE    &kp RET  &td1   &td3
             >;
         };
 
@@ -58,10 +72,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &kp DELETE  &kp TILDE  &trans  &kp ASTRK             &kp PLUS                 &trans   &kp N7        &kp N8        &kp N9        &trans  &kp BSPC
-&kp TAB    &trans      &trans     &trans  &kp EQUAL             &kp MINUS                &trans   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&kp LSHFT  &trans      &trans     &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                                  &trans  &trans                &kp SPACE                &kp RET  &kp N0        &kp PERIOD
+&kp DELETE  &kp TILDE         &kp UP_ARROW    &trans      &kp ASTRK             &kp PLUS                 &trans   &kp N7        &kp N8        &kp N9        &trans  &kp BSPC
+&kp TAB     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT   &kp EQUAL             &kp MINUS                &trans   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&kp LSHFT   &kp LEFT_CONTROL  &kp LEFT_ALT    &kp DELETE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+                                              &trans      &trans                &kp SPACE                &kp RET  &kp N0        &kp PERIOD
             >;
         };
 
@@ -75,10 +89,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans    &trans  &trans            &trans   &trans    &kp UP_ARROW  &trans      &trans         &kp BSPC
-&trans      &trans  &trans  &trans    &trans  &studio_unlock    &trans   &kp LEFT  &kp DOWN      &kp RIGHT   &trans         &trans
-&kp LCTRL   &trans  &trans  &trans    &trans  &trans            &trans   &trans    &trans        &kp DELETE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
-                            &kp LGUI  &trans  &kp SPACE         &kp RET  &trans    &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
