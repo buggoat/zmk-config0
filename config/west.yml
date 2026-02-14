@@ -8,11 +8,17 @@ manifest:
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: buggoat #new entry
+      url-base: https://github.com/buggoat #new entry
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: nice-view-gem #new entry
+      remote: m165437 #new entry
+      revision: main #new entry
     # dongle_display
     - name: zmk-dongle-display
       remote: englmaxi
