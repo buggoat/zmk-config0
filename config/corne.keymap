@@ -31,14 +31,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD2";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&kp LEFT_ALT>;
+            bindings = <&mo 1>, <&kp LEFT_GUI>;
         };
 
         td3: td3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD3";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN>, <&tog 1>;
+            bindings = <&kp RIGHT_ALT>, <&tog 1>;
         };
     };
 
