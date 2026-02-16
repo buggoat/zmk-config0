@@ -6,7 +6,7 @@ layers:
   - DELETE
   - '~'
   - UP ARROW
-  - {t: ▽, type: trans}
+  - Gui+Sft+S
   - '*'
   - +
   - {t: ▽, type: trans}
