@@ -9,10 +9,10 @@ layers:
   - Gui+Sft+S
   - '*'
   - +
-  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:backspace-outline$$
   - ↹
@@ -21,11 +21,11 @@ layers:
   - →
   - '='
   - '-'
-  - {t: ▽, type: trans}
   - '4'
   - '5'
   - '6'
   - {t: ▽, type: trans}
+  - ':'
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-shift$$
   - LEFT CONTROL
@@ -33,7 +33,6 @@ layers:
   - DELETE
   - (
   - )
-  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -41,9 +40,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ␣
   - ⏎
-  - '0'
+  - {t: '0', h: RIGHT SHIFT}
   - .
   NAV:
   - {t: ▽, type: trans}
